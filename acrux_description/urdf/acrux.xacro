@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/base_link.dae" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/base_link.dae" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/base_link.dae" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/base_link.dae" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="-0.250058 0.175387 -0.06065" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/rf_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/rf_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.250058 0.175387 -0.06065" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/rf_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/rf_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="-0.22071 0.174967 -0.027246" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/rf_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/rf_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.22071 0.174967 -0.027246" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/rf_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/rf_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="-0.250058 -0.175387 -0.06065" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/lf_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/lf_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.250058 -0.175387 -0.06065" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/lf_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/lf_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="-0.22071 -0.174967 -0.024259" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/lf_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/lf_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.22071 -0.174967 -0.024259" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/lf_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/lf_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="-0.283 -0.0 -0.1599" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.283 -0.0 -0.1599" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +139,14 @@
   <visual>
     <origin xyz="0.250058 -0.175566 -0.06065" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/lb_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/lb_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.250058 -0.175566 -0.06065" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/lb_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/lb_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -160,14 +160,14 @@
   <visual>
     <origin xyz="0.22071 -0.175146 -0.024259" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/lb_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/lb_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.22071 -0.175146 -0.024259" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/lb_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/lb_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -181,14 +181,14 @@
   <visual>
     <origin xyz="0.000209 -0.232679 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.000209 -0.232679 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -202,14 +202,14 @@
   <visual>
     <origin xyz="0.0 0.232322 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.0 0.232322 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -223,14 +223,14 @@
   <visual>
     <origin xyz="0.250058 0.175209 -0.06065" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/rb_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/rb_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.250058 0.175209 -0.06065" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/rb_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/rb_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -244,14 +244,14 @@
   <visual>
     <origin xyz="0.22071 0.174789 -0.024259" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/rb_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/rb_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.22071 0.174789 -0.024259" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/rb_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/rb_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -265,14 +265,14 @@
   <visual>
     <origin xyz="0.125 0.174821 -0.069" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/right_suspension_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/right_suspension_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.125 0.174821 -0.069" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/right_suspension_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/right_suspension_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -286,14 +286,14 @@
   <visual>
     <origin xyz="0.125 -0.174822 -0.069" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/left_suspension_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/left_suspension_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.125 -0.174822 -0.069" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/left_suspension_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/left_suspension_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -307,14 +307,14 @@
   <visual>
     <origin xyz="-0.318 0.0 -0.093001" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/camera_link_1.dae" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/camera_link_1.dae" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.318 0.0 -0.093001" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://acrux_description/meshes/camera_link_1.dae" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find acrux_description)/meshes/camera_link_1.dae" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
