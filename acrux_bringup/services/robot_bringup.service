@@ -1,0 +1,10 @@
+[Unit]
+Description=RigBetel Labs ACRUX UPSTART SERVICE
+After=NetworkManager.service
+
+[Service]
+Type=simple
+ExecStart=/home/rigbetel-labs/ros2_ws/src/acrux/acrux_bringup/start.sh
+
+[Install]
+WantedBy=default.target

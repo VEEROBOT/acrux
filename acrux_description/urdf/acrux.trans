@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<robot name="acrux" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="fr_caster_roller_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="fr_caster_roller_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="fr_caster_roller_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="fr_caster_wheel_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="fr_caster_wheel_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="fr_caster_wheel_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="fl_caster_roller_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="fl_caster_roller_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="fl_caster_roller_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="fl_caster_wheel_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="fl_caster_wheel_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="fl_caster_wheel_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="bl_caster_roller_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="bl_caster_roller_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="bl_caster_roller_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="bl_caster_wheel_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="bl_caster_wheel_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="bl_caster_wheel_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="left_wheel_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="left_wheel_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="left_wheel_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="right_wheel_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="right_wheel_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="right_wheel_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="br_caster_roller_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="br_caster_roller_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="br_caster_roller_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="br_caster_wheel_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="br_caster_wheel_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="br_caster_wheel_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="right_suspension_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="right_suspension_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="right_suspension_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="left_suspension_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="left_suspension_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="left_suspension_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>

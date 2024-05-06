@@ -1,0 +1,61 @@
+kkbase_fram: base_link
+odom_frame: odom
+
+# How often map is updated
+map_update_interval: 1.0
+
+# Max usable range, beam is cropped farther ranges are noisy
+maxUrange: 6.0
+maxRange: 8.0
+
+# greedy end point matching => standard deviation of particles, less value confined particles
+sigma: 0.01
+
+# kernel size for correspondance => Area size used for feature matching which adjusts the pose 
+kernelSize: 3.5
+
+# optimization steps => adjustment in position of robot
+lstep: 0.01
+astep: 0.01
+
+# iterations of scan matcher 
+iterations: 8
+
+lsigma: 0.07
+ogain: 2.5
+
+# Take all rays of scan data
+lskip: 0
+
+# Min score for good match Should be 200 but avg score is 150
+minimumScore: 50
+
+# Odometry error (Default)
+srr: 0.1
+srt: 0.2
+str: 0.1
+stt: 0.2
+
+# Translation and rotational updates
+linearUpdate: 0.03
+angularUpdate: 0.17
+
+temporalUpdate: 0.0
+resampleThreshold: 0.5
+particles: 30
+
+# Initial map size, default
+xmin: -10.0
+ymin: -10.0
+xmax: 10.0
+ymax: 10.0
+
+# Resolution
+delta: 0.03
+
+# Default
+llsamplerange: 0.01
+llsamplestep: 0.01
+lasamplerange: 0.005
+lasamplestep: 0.005
+

@@ -1,0 +1,438 @@
+<?xml version="1.0" ?>
+<robot name="acrux" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find acrux_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find acrux_description)/urdf/acrux.trans" />
+<xacro:include filename="$(find acrux_description)/urdf/acrux.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0024921013784631636 -0.0023612160896141366 0.14937052366937215" rpy="0 0 0"/>
+    <mass value="39.41898404286275"/>
+    <inertia ixx="1.317676" iyy="2.154092" izz="2.968189" ixy="-0.02152" iyz="0.007685" ixz="0.039646"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/base_link.dae" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/base_link.dae" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rf_caster_holder_1">
+  <inertial>
+    <origin xyz="-0.011934891324541036 0.00017017683277106843 -0.011729113030871305" rpy="0 0 0"/>
+    <mass value="0.09905768239491433"/>
+    <inertia ixx="3.9e-05" iyy="4.1e-05" izz="4.4e-05" ixy="0.0" iyz="0.0" ixz="-1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.250058 0.175387 -0.06065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/rf_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.250058 0.175387 -0.06065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/rf_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rf_caster_wheel_1">
+  <inertial>
+    <origin xyz="-4.865092768646662e-07 8.117978270161252e-08 4.932369029597705e-07" rpy="0 0 0"/>
+    <mass value="0.36313638276871196"/>
+    <inertia ixx="7.8e-05" iyy="0.000119" izz="7.8e-05" ixy="1e-06" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.22071 0.174967 -0.027246" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/rf_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.22071 0.174967 -0.027246" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/rf_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lf_caster_holder_1">
+  <inertial>
+    <origin xyz="-0.011934994860795772 -0.00017016949631226685 -0.014716536162403732" rpy="0 0 0"/>
+    <mass value="0.09905820495235285"/>
+    <inertia ixx="3.9e-05" iyy="4.1e-05" izz="4.4e-05" ixy="-0.0" iyz="-0.0" ixz="-1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.250058 -0.175387 -0.06065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/lf_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.250058 -0.175387 -0.06065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/lf_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lf_caster_wheel_1">
+  <inertial>
+    <origin xyz="-4.865092763650658e-07 -8.117978247956792e-08 -6.763096794398793e-09" rpy="0 0 0"/>
+    <mass value="0.36313638276871174"/>
+    <inertia ixx="7.8e-05" iyy="0.000119" izz="7.8e-05" ixy="-1e-06" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.22071 -0.174967 -0.024259" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/lf_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.22071 -0.174967 -0.024259" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/lf_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lidar_1">
+  <inertial>
+    <origin xyz="-0.0007933090919511332 -0.0002587482513009486 0.004055287684263331" rpy="0 0 0"/>
+    <mass value="0.169686774123273"/>
+    <inertia ixx="3.9e-05" iyy="3.9e-05" izz="7.7e-05" ixy="1e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.283 -0.0 -0.1599" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.283 -0.0 -0.1599" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lb_caster_holder_1">
+  <inertial>
+    <origin xyz="0.011934891324540425 -0.0001706768327710828 -0.014716613030871767" rpy="0 0 0"/>
+    <mass value="0.09905768239491433"/>
+    <inertia ixx="3.9e-05" iyy="4.1e-05" izz="4.4e-05" ixy="0.0" iyz="-0.0" ixz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.250058 -0.175566 -0.06065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/lb_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.250058 -0.175566 -0.06065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/lb_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lb_caster_wheel_1">
+  <inertial>
+    <origin xyz="4.865092759209766e-07 -5.811797826049681e-07 -6.763097418899244e-09" rpy="0 0 0"/>
+    <mass value="0.36313638276871196"/>
+    <inertia ixx="7.8e-05" iyy="0.000119" izz="7.8e-05" ixy="1e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.22071 -0.175146 -0.024259" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/lb_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.22071 -0.175146 -0.024259" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/lb_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_wheel_1">
+  <inertial>
+    <origin xyz="2.8784747734843566e-07 0.014999500000000277 -6.730727086790012e-16" rpy="0 0 0"/>
+    <mass value="2.663442251713426"/>
+    <inertia ixx="0.002597" iyy="0.004794" izz="0.002597" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.000209 -0.232679 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.000209 -0.232679 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_wheel_1">
+  <inertial>
+    <origin xyz="-2.3296313890843006e-16 -0.014999500000000138 -7.632783294297951e-16" rpy="0 0 0"/>
+    <mass value="2.663442251713426"/>
+    <inertia ixx="0.002597" iyy="0.004794" izz="0.002597" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.232322 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.232322 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rb_caster_holder_1">
+  <inertial>
+    <origin xyz="0.011934994860795106 0.00017066949631239225 -0.014716536162404502" rpy="0 0 0"/>
+    <mass value="0.09905820495235285"/>
+    <inertia ixx="3.9e-05" iyy="4.1e-05" izz="4.4e-05" ixy="-0.0" iyz="0.0" ixz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.250058 0.175209 -0.06065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/rb_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.250058 0.175209 -0.06065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/rb_caster_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rb_caster_wheel_1">
+  <inertial>
+    <origin xyz="4.865092760319989e-07 5.811797826049681e-07 -6.763097637474402e-09" rpy="0 0 0"/>
+    <mass value="0.36313638276871174"/>
+    <inertia ixx="7.8e-05" iyy="0.000119" izz="7.8e-05" ixy="-1e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.22071 0.174789 -0.024259" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/rb_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.22071 0.174789 -0.024259" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/rb_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_suspension_1">
+  <inertial>
+    <origin xyz="0.039136061838748404 0.0156784731609044 0.003243429744473225" rpy="0 0 0"/>
+    <mass value="3.210422130556382"/>
+    <inertia ixx="0.004276" iyy="0.035866" izz="0.038316" ixy="-0.004312" iyz="0.000509" ixz="0.002551"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.125 0.174821 -0.069" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/right_suspension_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.125 0.174821 -0.069" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/right_suspension_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_suspension_1">
+  <inertial>
+    <origin xyz="0.027917947516527736 -0.011796465527338595 0.009540161488296311" rpy="0 0 0"/>
+    <mass value="4.152422203768184"/>
+    <inertia ixx="0.005076" iyy="0.045303" izz="0.047368" ixy="0.004874" iyz="-0.000826" ixz="0.003551"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.125 -0.174822 -0.069" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/left_suspension_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.125 -0.174822 -0.069" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/left_suspension_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="camera_link">
+  <inertial>
+    <origin xyz="0.011445556188227846 -6.205521900433345e-05 0.019977181929567947" rpy="0 0 0"/>
+    <mass value="0.07410808731596727"/>
+    <inertia ixx="4.8e-05" iyy="7e-06" izz="4.8e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.318 0.0 -0.093001" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/camera_link_1.dae" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.318 0.0 -0.093001" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://acrux_description/meshes/camera_link_1.dae" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+<link name="camera_depth_frame"/>
+<link name="merged_scan_frame"/>
+
+<joint name="merged_scan_joint" type="fixed">
+  <origin xyz="0.283 0.0 0.1599" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="merged_scan_frame"/>
+</joint>
+
+<joint name="camera_depth_joint" type="fixed">
+  <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
+  <parent link="camera_link"/>
+  <child link="camera_depth_frame"/>
+</joint>
+<link name="imu_link"/>
+<joint name="imu_joint" type="fixed">
+  <origin xyz="-0.05 0.0 0.21" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="imu_link"/>
+</joint>
+
+<joint name="fr_caster_roller_joint" type="continuous">
+  <origin xyz="0.250058 -0.175387 0.06065" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="rf_caster_holder_1"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="fr_caster_wheel_joint" type="continuous">
+  <origin xyz="-0.029348 0.00042 -0.033404" rpy="0 0 0"/>
+  <parent link="rf_caster_holder_1"/>
+  <child link="rf_caster_wheel_1"/>
+  <axis xyz="0.014319 0.999897 0.0"/>
+</joint>
+
+<joint name="fl_caster_roller_joint" type="continuous">
+  <origin xyz="0.250058 0.175387 0.06065" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="lf_caster_holder_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="fl_caster_wheel_joint" type="continuous">
+  <origin xyz="-0.029348 -0.00042 -0.036391" rpy="0 0 0"/>
+  <parent link="lf_caster_holder_1"/>
+  <child link="lf_caster_wheel_1"/>
+  <axis xyz="0.014319 -0.999897 -0.0"/>
+</joint>
+
+<joint name="lidar_joint" type="fixed">
+  <origin xyz="0.283 0.0 0.1599" rpy="0 0 3.1452"/>
+  <parent link="base_link"/>
+  <child link="lidar_1"/>
+</joint>
+
+<joint name="bl_caster_roller_joint" type="continuous">
+  <origin xyz="-0.125058 0.000744 -0.00835" rpy="0 0 0"/>
+  <parent link="left_suspension_1"/>
+  <child link="lb_caster_holder_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="bl_caster_wheel_joint" type="continuous">
+  <origin xyz="0.029348 -0.00042 -0.036391" rpy="0 0 0"/>
+  <parent link="lb_caster_holder_1"/>
+  <child link="lb_caster_wheel_1"/>
+  <axis xyz="0.014319 0.999897 0.0"/>
+</joint>
+
+<joint name="left_wheel_joint" type="continuous">
+  <origin xyz="0.124791 0.057857 -0.009" rpy="0 0 0"/>
+  <parent link="left_suspension_1"/>
+  <child link="left_wheel_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="right_wheel_joint" type="continuous">
+  <origin xyz="0.125 -0.057501 -0.009" rpy="0 0 0"/>
+  <parent link="right_suspension_1"/>
+  <child link="right_wheel_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="br_caster_roller_joint" type="continuous">
+  <origin xyz="-0.125058 -0.000388 -0.00835" rpy="0 0 0"/>
+  <parent link="right_suspension_1"/>
+  <child link="rb_caster_holder_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+</joint>
+
+<joint name="br_caster_wheel_joint" type="continuous">
+  <origin xyz="0.029348 0.00042 -0.036391" rpy="0 0 0"/>
+  <parent link="rb_caster_holder_1"/>
+  <child link="rb_caster_wheel_1"/>
+  <axis xyz="-0.014319 0.999897 -0.0"/>
+</joint>
+
+<joint name="right_suspension_joint" type="continuous">
+  <origin xyz="-0.125 -0.174821 0.069" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="right_suspension_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="left_suspension_joint" type="continuous">
+  <origin xyz="-0.125 0.174822 0.069" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="left_suspension_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="camera_joint" type="fixed">
+  <origin xyz="0.318 0.0 0.093001" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="camera_link"/>
+</joint>
+
+</robot>
