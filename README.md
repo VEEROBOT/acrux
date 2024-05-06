@@ -221,8 +221,6 @@ sudo nmcli device wifi connect "your-wifi-name" password "your-wifi-password"
 
 Provides sensor and actuation topics. 
 
-> [!IMPORTANT]
-> Please note that some of the nodes and scripts have been removed from this public repository for privacy concerns.
 
 
 | Launch File Name         | Description                                                                                                                                                                                              | Nodes Launched                              |
