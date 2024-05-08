@@ -1,8 +1,6 @@
 
 # Acrux ROS2 Humble Release
 
-![acrux Logo](img/logo.png)
-
 ## Table of Contents
 - [Acrux ROS2 Humble Release](#acrux-ros2-humble-release)
   - [Table of Contents](#table-of-contents)
