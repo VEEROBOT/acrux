@@ -1,49 +1,6 @@
 
 # Acrux ROS2 Humble Release
 
-## Table of Contents
-- [Acrux ROS2 Humble Release](#acrux-ros2-humble-release)
-  - [Table of Contents](#table-of-contents)
-  - [1. Installation](#1-installation)
-  - [2. Connection](#2-connection)
-    - [Initial Wifi Setup](#initial-wifi-setup)
-      - [1. Create a mobile hotspot](#1-create-a-mobile-hotspot)
-      - [2. Start the robot](#2-start-the-robot)
-      - [3. SSH into the robot](#3-ssh-into-the-robot)
-      - [4. Connect to Wifi](#4-connect-to-wifi)
-      - [4. SSH using your Wifi](#4-ssh-using-your-wifi)
-  - [3. NUC Instructions](#3-nuc-instructions)
-    - [Instructions to remove Intel NUC from robot](#instructions-to-remove-intel-nuc-from-robot)
-    - [USB ports Configuration](#usb-ports-configuration)
-  - [4. Package Description](#4-package-description)
-    - [4.1 acrux\_bringup](#41-acrux_bringup)
-    - [4.2 acrux\_description](#42-acrux_description)
-    - [4.2 acrux\_firmware](#42-acrux_firmware)
-    - [4.3 acrux\_gazebo](#43-acrux_gazebo)
-    - [4.4 acrux\_navigation](#44-acrux_navigation)
-    - [4.6 acrux\_slam](#46-acrux_slam)
-  - [5. Launch Sequence](#5-launch-sequence)
-    - [Simulation](#simulation)
-    - [Real Robot](#real-robot)
-    - [5.1 SLAM and map saver](#51-slam-and-map-saver)
-      - [This will ensure all the necessary nodes are up for SLAM based navigation on the robot.](#this-will-ensure-all-the-necessary-nodes-are-up-for-slam-based-navigation-on-the-robot)
-    - [5.2 Autonomous Navigation in the Saved Map](#52-autonomous-navigation-in-the-saved-map)
-  - [6. Low-Level ROS Topics](#6-low-level-ros-topics)
-      - [`/battery/percentage`](#batterypercentage)
-      - [`/battery/voltage`](#batteryvoltage)
-      - [`/cmd_vel`](#cmd_vel)
-      - [`/pid/control`](#pidcontrol)
-      - [`/diagnostics/test`](#diagnosticstest)
-      - [`/wheel/ticks`](#wheelticks)
-      - [`/wheel/vel`](#wheelvel)
-  - [7. acrux Robot Parameters](#7-acrux-robot-parameters)
-  - [9. Joystick Control Instructions](#9-joystick-control-instructions)
-  - [10. LED indicators instructions](#10-led-indicators-instructions)
-    - [Nomenclature](#nomenclature)
-    - [Instructions](#instructions)
-
-<div style="page-break-after: always;"></div>
-
 ## 1. Installation
 
 ```bash
